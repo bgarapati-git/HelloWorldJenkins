@@ -1,0 +1,10 @@
+pipeline{
+  stages{
+    stage('preparation'){
+      steps{
+        bat "javac HelloWorld.java"
+        bat "java HelloWorld"
+      }
+    }
+  }
+}
