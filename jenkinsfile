@@ -1,9 +1,13 @@
 pipeline{
   agent any
   stages{
-    stage('preparation'){
+    stage('build'){
       steps{
         bat "javac HelloWorld.java"
+      }
+    }
+    stage('test'){
+      steps{
         bat "java HelloWorld"
       }
     }
